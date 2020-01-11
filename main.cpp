@@ -96,7 +96,7 @@ int main() {
 
 			color[0] = 255;
 			color[1] = 255;
-			color[2] = 0;
+			color[2] = 255;
 	
 	
 		if (ImGui::Button("Triangle")) {
