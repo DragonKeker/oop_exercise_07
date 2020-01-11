@@ -1,7 +1,6 @@
 #include"loader.h"
 
-
-    std::vector<std::unique_ptr<figure>> loader::load(std::ifstream& is) {
+std::vector<std::unique_ptr<figure>> loader::load(std::ifstream& is) {
         std::string figure_name;
         std::vector<std::unique_ptr<figure>> figures;
         while (is >> figure_name) {
@@ -16,9 +15,6 @@
                 }
                 struct color buffcolor {};
                 is >> buffcolor.r >> buffcolor.g >> buffcolor.b;
-
-                figures.emplace_back(std::make_unique<curve_line>(vertices));
-                (*figures[figures.size() - 1]).set_color(buffcolor);
             }
 
             else if (figure_name == std::string("quadrangle")) {
