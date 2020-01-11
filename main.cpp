@@ -25,7 +25,7 @@ int main() {
 	Document currentDocument;
 
 	while (!quit) {
-		renderer.set_color(0, 0, 0);
+		
 		renderer.clear();
 
 		sdl::event event;
