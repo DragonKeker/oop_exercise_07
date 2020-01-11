@@ -95,7 +95,7 @@ int main() {
 
 
 			color[0] = 255;
-			color[1] = 0;
+			color[1] = 255;
 			color[2] = 0;
 	
 	
